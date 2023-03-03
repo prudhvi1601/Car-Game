@@ -7,7 +7,7 @@ document.addEventListener('keyup', keyUp);
 
 startScreen.addEventListener('click', start);
 
-let player = { speed: 5, score: 0 };
+let player = { speed: 8, score: 0 };
 
 // to accessing arrow keys 
 let keys = { ArrowUp: false, ArrowDown: false, ArrowRight: false, ArrowLeft: false };
@@ -96,7 +96,7 @@ function gamePlay() {
         if (keys.ArrowLeft && player.x > 0) {
             player.x -= player.speed;
         }
-        if (keys.ArrowRight && player.x < (road.width - 50)) {
+        if (keys.ArrowRight && player.x < (road.width - 65)) {
             player.x += player.speed;
         }
 

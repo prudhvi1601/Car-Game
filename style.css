@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .carGame{
-    background-image: url(bg.jpg);
+    background-image: url(carbg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -18,55 +18,68 @@
 }
 
 .score {
-    background-color: yellow;
+    background-color: chartreuse;
     width: 250px;
     line-height: 70px;
     text-align: center;
-    color: black;
-    font-size: 1.5rem;
+    color: red;
+    font-size: 35px;
+    font-weight: 600;
     position: absolute;
     left: 100px;
     top: 15px;
     box-shadow: 0 5px 5px #777;
+    font-family: fantasy;
+    border-radius: 15px;
 }
 
 .startScreen {
     position: absolute;
-    background-color: red;
-    left: 25%;
+    background-color: aqua;
+    left: 24%;
     top: 25%;
     transform: translateY(-50%, -50%);
-    color: white;
     z-index: 1;
     text-align: center;
     border: 1px solid black;
     padding: 15px;
     margin: auto;
     width: 50%;
+    height: 150px;
+    font-size: 30px;
+    font-weight: 500;
     text-transform: uppercase;
     box-shadow: 0 5px 5px #777;
-    letter-spacing: 5;
-    word-spacing: 3;
+    letter-spacing: 8;
+    word-spacing: 6;
     cursor: pointer;
+    border-radius: 50px;
+    transition:1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 }
 
+.startScreen:hover{
+    background-color: greenyellow;
+    color: red;
+    transform: scale(0.55);
+}
 
 .gameArea {
-    background-color: #392e4a;
+    background-color: #000000;
     width: 400px;
     height: 100vh;
     overflow: hidden;
     margin: auto;
     position: relative;
-    border-right: 7px dashed lightskyblue;
-    border-left: 7px dashed lightskyblue;
+    border-right: 7px dashed white;
+    border-left: 7px dashed white;
 }
 
 .car,
 .enemy {
     width: 50px;
     height: 85px;
-    background-color: yellow;
+    background-color: red;
     position: absolute;
     bottom: 120px;
     background-image: url(car.png);
