@@ -95,3 +95,7 @@
     position: absolute;
     margin-left: 195px;
 }
+
+marquee{
+    z-index: 5;
+}
